@@ -1,19 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <!-- ¡CAMBIO REALIZADO! Cambiamos a net8.0 para la compatibilidad con el entorno de despliegue. -->
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-      <PackageReference Include="FluentValidation" Version="12.0.0" />
-      <PackageReference Include="MediatR" Version="13.0.0" />
+        <!-- Estos paquetes son compatibles con net8.0, no necesitan cambios de versión. -->
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+        <PackageReference Include="FluentValidation" Version="12.0.0" />
+        <PackageReference Include="MediatR" Version="13.0.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AlexisApp.Domain\AlexisApp.Domain.csproj" />
+        <ProjectReference Include="..\AlexisApp.Domain\AlexisApp.Domain.csproj" />
     </ItemGroup>
 
 </Project>
