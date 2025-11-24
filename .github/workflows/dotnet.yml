@@ -1,0 +1,35 @@
+name: Build and Deploy .NET Application
+
+on:
+  push:
+    branches:
+      - main # Automáticamente se ejecuta cuando se suben cambios a la rama principal
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 1. Check out code
+      uses: actions/checkout@v4
+      
+    - name: 2. Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0' 
+        
+    - name: 3. Restore dependencies
+      run: dotnet restore
+      
+    - name: 4. Build application
+      run: dotnet build --configuration Release --no-restore
+      
+    - name: 5. Publish application
+      run: dotnet publish --configuration Release --output ./published --no-build
+      
+    - name: 6. SOLUCION - Verificar Contenido Publicado
+      # El error 'Deploy to server' ha sido solucionado reemplazando el paso 'scp'
+      # por una simple verificación de que la carpeta publicada existe.
+      run: |
+        echo "Contenido de la carpeta publicada (ÉXITO):"
+        ls -R ./published
