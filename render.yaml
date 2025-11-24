@@ -3,24 +3,20 @@
 services:
   - type: web
     name: alexis-app-api
-    # LA PROPIEDAD 'env' ha sido eliminada. Render inferirá el entorno
-    # usando el 'buildCommand' de dotnet.
     region: oregon # La región donde quieres desplegar (puedes cambiarla)
     plan: starter # Plan (el plan gratuito/básico de Render)
     
     # === Comandos de Construcción y Arranque ===
     
     # Comando de Construcción (Build Command)
-    # NOTA: Si el proyecto está en una subcarpeta llamada 'AlexisApp'
-    # el comando DEBE ser: dotnet publish AlexisApp/AlexisApp.csproj -c Release -o output
-    # Si la API es el proyecto 'LAB13-LOPINTAALEXIS', y está en la raíz, usamos:
-    buildCommand: dotnet publish -c Release -o output
+    # FORZAMOS LA PUBLICACIÓN A .NET 8.0 (-f net8.0) para resolver el NETSDK1045.
+    buildCommand: dotnet publish -c Release -f net8.0 -o output
     
     # Comando de Inicio (Start Command)
+    # Reemplaza 'LAB13-LOPINTAALEXIS.dll' por el nombre exacto de tu DLL.
     startCommand: dotnet output/LAB13-LOPINTAALEXIS.dll
     
     # Variables de Entorno (Environment Variables)
-    # CRUCIAL para que ASP.NET Core escuche en el puerto dinámico de Render.
     envVars:
       - key: ASPNETCORE_URLS
         value: http://+:$PORT
