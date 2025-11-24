@@ -7,10 +7,6 @@ services:
     region: oregon # La región donde quieres desplegar (puedes cambiarla)
     plan: starter # Plan (el plan gratuito/básico de Render)
     
-    # === La propiedad 'port' se define directamente en el servicio web ===
-    # ASP.NET Core necesita saber qué puerto interno está usando.
-    port: 8080 # Puerto estándar que la aplicación ASP.NET Core expondrá
-    
     # === Comandos de Construcción y Arranque ===
     
     # Comando de Construcción (Build Command)
