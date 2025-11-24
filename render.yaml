@@ -1,0 +1,26 @@
+# Este archivo define la infraestructura de tu aplicación en Render (Blueprint).
+# Render detectará este archivo automáticamente cuando lo subas.
+services:
+  - type: web
+    name: alexis-app-api
+    env: dotnet # Indicamos que es un entorno .NET nativo
+    region: oregon # La región donde quieres desplegar (puedes cambiarla)
+    plan: starter # Plan (el plan gratuito/básico de Render)
+    
+    # === Comandos de Construcción y Arranque ===
+    
+    # Comando de Construcción (Build Command)
+    buildCommand: dotnet publish -c Release -o output
+    
+    # Comando de Inicio (Start Command)
+    # Reemplaza 'LAB13-LOPINTAALEXIS.dll' por el nombre exacto de tu DLL.
+    startCommand: dotnet output/LAB13-LOPINTAALEXIS.dll
+    
+    # Puerto que la aplicación ASP.NET Core expondrá
+    ports:
+      - port: 8080 
+        
+    # Variables de Entorno (Environment Variables)
+    envVars:
+      - key: ASPNETCORE_URLS
+        value: http://+:$PORT
