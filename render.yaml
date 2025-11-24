@@ -9,8 +9,8 @@ services:
     # === Comandos de Construcción y Arranque ===
     
     # Comando de Construcción (Build Command)
-    # FORZAMOS LA PUBLICACIÓN A .NET 8.0 (-f net8.0) para resolver el NETSDK1045.
-    buildCommand: dotnet publish -c Release -f net9.0 -o output
+    # Ya no forzamos -f net8.0 porque el .csproj ya lo especifica.
+    buildCommand: dotnet publish -c Release -o output
     
     # Comando de Inicio (Start Command)
     # Reemplaza 'LAB13-LOPINTAALEXIS.dll' por el nombre exacto de tu DLL.
