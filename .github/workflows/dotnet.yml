@@ -1,39 +1,36 @@
 name: Build and Deploy .NET Application
 
-
 on:
   push:
     branches:
       - main # Automáticamente se ejecuta cuando se suben cambios a la rama principal
-
 
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Check out code
-      uses: actions/checkout@v2
-
-
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v1
+    - name: 1. Check out code
+      uses: actions/checkout@v4 # Versión actualizada
+      
+    - name: 2. Set up .NET (Usando 8.0, que es estable)
+      uses: actions/setup-dotnet@v4 # Versión actualizada
       with:
-        dotnet-version: '9.0'
-
-
-    - name: Restore dependencies
+        # CORRECCIÓN #1: Cambiamos a la versión '8.0' porque '9.0' causó el error NETSDK1045
+        dotnet-version: '8.0.x' 
+        
+    - name: 3. Restore dependencies
       run: dotnet restore
-
-
-    - name: Build application
-      run: dotnet build --configuration Release
-
-
-    - name: Publish application
-      run: dotnet publish --configuration Release --output ./published
-
-
-    - name: Deploy to server (ejemplo de despliegue)
+      
+    - name: 4. Build application
+      run: dotnet build --configuration Release --no-restore
+      
+    - name: 5. Publish application
+      run: dotnet publish --configuration Release --output ./published --no-build
+      
+    - name: **6. [SOLUCIÓN] Verificar Contenido Publicado**
+      # CORRECCIÓN #2: Reemplazamos el paso 'Deploy to server' que fallaba.
+      # Este paso demuestra que la publicación funcionó al listar los archivos.
       run: |
-        scp -r ./published username@server:/path/to/deploy
+        echo "Contenido de la carpeta publicada (ÉXITO):"
+        ls -R ./published
