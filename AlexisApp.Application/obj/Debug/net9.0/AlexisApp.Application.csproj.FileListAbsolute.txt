@@ -1,0 +1,15 @@
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\AlexisApp.Application.csproj.AssemblyReference.cache
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\AlexisApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\AlexisApp.Application.AssemblyInfoInputs.cache
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\AlexisApp.Application.AssemblyInfo.cs
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\AlexisApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\bin\Debug\net9.0\AlexisApp.Application.deps.json
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\bin\Debug\net9.0\AlexisApp.Application.dll
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\bin\Debug\net9.0\AlexisApp.Application.pdb
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\bin\Debug\net9.0\AlexisApp.Domain.dll
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\bin\Debug\net9.0\AlexisApp.Domain.pdb
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\AlexisAp.E183C022.Up2Date
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\AlexisApp.Application.dll
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\refint\AlexisApp.Application.dll
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\AlexisApp.Application.pdb
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Application\obj\Debug\net9.0\ref\AlexisApp.Application.dll

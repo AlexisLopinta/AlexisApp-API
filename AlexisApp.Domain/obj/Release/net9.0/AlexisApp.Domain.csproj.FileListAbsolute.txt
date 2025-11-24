@@ -1,0 +1,11 @@
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\bin\Release\net9.0\AlexisApp.Domain.deps.json
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\bin\Release\net9.0\AlexisApp.Domain.dll
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\bin\Release\net9.0\AlexisApp.Domain.pdb
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\obj\Release\net9.0\AlexisApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\obj\Release\net9.0\AlexisApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\obj\Release\net9.0\AlexisApp.Domain.AssemblyInfo.cs
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\obj\Release\net9.0\AlexisApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\obj\Release\net9.0\AlexisApp.Domain.dll
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\obj\Release\net9.0\refint\AlexisApp.Domain.dll
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\obj\Release\net9.0\AlexisApp.Domain.pdb
+C:\Users\Acer\RiderProjects\AlexisApp\AlexisApp.Domain\obj\Release\net9.0\ref\AlexisApp.Domain.dll
