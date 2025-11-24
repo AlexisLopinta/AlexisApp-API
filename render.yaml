@@ -3,7 +3,7 @@
 services:
   - type: web
     name: alexis-app-api
-    env: dotnet # Indicamos que es un entorno .NET nativo
+    # LA LÍNEA 'env: dotnet' HA SIDO ELIMINADA PARA EVITAR EL ERROR DE SINTAXIS
     region: oregon # La región donde quieres desplegar (puedes cambiarla)
     plan: starter # Plan (el plan gratuito/básico de Render)
     
