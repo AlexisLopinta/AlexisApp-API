@@ -1,11 +1,12 @@
 services:
   - type: web
     name: alexis-app-api
-    env: dotnet 
+    # CORRECCIÓN: Render ya no soporta 'dotnet' nativo, usamos Docker.
+    env: docker 
     region: oregon
     plan: starter
-    buildCommand: dotnet publish -c Release -o output
-    startCommand: dotnet output/LAB13-LOPINTAALEXIS.dll
+    # Los comandos de build y start ahora están dentro del Dockerfile.
+    # Solo necesitamos la variable de entorno para el puerto de ASP.NET Core.
     envVars:
       - key: ASPNETCORE_URLS
         value: http://+:$PORT
